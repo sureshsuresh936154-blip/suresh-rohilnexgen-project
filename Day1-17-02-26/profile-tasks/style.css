@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#000;
+}
+
+.container{
+    width:900px;
+    display:flex;
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+/* Left Side */
+.left{
+    width:40%;
+    padding:40px;
+    text-align:center;
+    background:linear-gradient(45deg,#ff4e50,#f000a8);
+    color:#fff;
+}
+
+.profile{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    margin-bottom:20px;
+}
+
+.left h2{
+    margin-bottom:5px;
+}
+
+.left p{
+    margin-bottom:25px;
+}
+
+.social i{
+    background:#333;
+    padding:10px;
+    margin:5px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.cv-btn{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background:#333;
+    color:#fff;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* Right Side */
+.right{
+    width:60%;
+    padding:40px;
+}
+
+.right h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.contact-info{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:25px;
+    background:linear-gradient(to right,#444,#000);
+    color:#fff;
+}
+
+form textarea{
+    border-radius:15px;
+    height:100px;
+}
+
+.send-btn{
+    display:block;
+    margin:0 auto;
+    padding:10px 30px;
+    border:none;
+    border-radius:5px;
+    background:#000;
+    color:#fff;
+    cursor:pointer;
+}
+
+.footer{
+    text-align:center;
+    margin-top:15px;
+    font-size:14px;
+}
+/* Image & form safety */
+.profile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+form input,
+form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+/* Mobile & Tablet Responsive */
+@media (max-width: 768px){
+
+    .container{
+        flex-direction: column; /* side by side → top to bottom */
+    }
+
+    .left,
+    .right{
+        width: 100%;
+    }
+
+    .left{
+        padding: 30px 15px;
+    }
+
+    .right{
+        padding: 25px 15px;
+    }
+
+    .profile{
+        width: 120px;
+        height: 120px;
+    }
+
+    .right h1{
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .contact-info{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .social{
+        justify-content: center;
+    }
+
+    .cv-btn,
+    .send-btn{
+        width: 100%;
+    }
+}
+/* Very Small Mobile */
+@media (max-width: 480px){
+
+    .right h1{
+        font-size: 20px;
+    }
+
+    form input,
+    form textarea{
+        font-size: 14px;
+    }
+}

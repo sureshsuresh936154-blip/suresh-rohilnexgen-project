@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <div class="top-buttons">
+        <button class="yellow">  <span class="iconify" data-icon="arcticons:flipkart"></span>Flipkart</button>
+        <button class="yellow"> <span class="iconify" data-icon="arcticons:yahoo-japan-finance"></span>Finance</button>
+        <button class="yellow"><span class="iconify" data-icon="material-symbols:travel"></span>Travel</button>
+    </div>
+
+    <div class="location">📍  Madurai | No 7/2 Anna nagar madurai</div>
+
+    <div class="search-box">
+        🔍 <input type="text" id="search" placeholder="Search products...">
+    </div>
+</div>
+
+<!-- Categories -->
+<div class="categories">
+    <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png">
+        <div>For You</div>
+    </div>
+    <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png">
+        <div>Fashion</div>
+    </div>
+    <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/15/15874.png">
+        <div>Mobiles</div>
+    </div>
+    <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/892/892458.png">
+        <div>Beauty</div>
+    </div>
+    <div class="category">
+        <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png">
+        <div>Electronics</div>
+    </div>
+</div>
+
+<!-- Products -->
+<div class="products" id="productList">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246">
+        <h4>Men Jeans</h4>
+        <p>Min. 80% Off</p>
+    </div>
+    <div class="card">
+        <img src="https://media.istockphoto.com/id/2179395450/photo/holding-a-black-color-tws-or-ear-buds-bluetooth-headset.jpg?s=612x612&w=0&k=20&c=JaMjgSLAAQkiodqc5a5ShPxeauYf-plzW3tloNwkNOc=">
+        <h4>Wireless Earbuds</h4>
+        <p>₹999</p>
+    </div>
+
+    <div class="card">
+        <img src="https://media.istockphoto.com/id/2167804581/photo/happy-indian-family-celebrating-diwali-at-home-with-traditional-attire.webp?s=1024x1024&w=is&k=20&c=KR_MDX7KXSh0-p0IHSGlIk6sCP6_n2xWjmXrxa5RoZ4=">
+        <h4>Traditional Wear</h4>
+        <p>Min. 70% Off</p>
+    </div>
+
+    <div class="card">
+        <img src="https://media.istockphoto.com/id/499281324/photo/womens-gold-watch-on-white-background.jpg?s=612x612&w=0&k=20&c=RIJl1DsrZqPPRmRlPFeMOT6cDuVAMQgBO1IGYaczxSw=">
+        <h4>Dazzling watches</h4>
+        <p>Min. 50% Off</p>
+    </div>
+
+    <div class="card">
+        <img src="https://media.istockphoto.com/id/1792961349/photo/clothes-on-hangers-shopping-in-store-clothes-on-hangers-in-shop-for-sale.jpg?s=612x612&w=0&k=20&c=-dd5L94dpi9V1kiCHRMH_vLGZeh0JLK972VEAkw-I7Q=">
+        <h4>fastselling t-shirt</h4>
+        <p>Min. 70% Off</p>
+    </div>
+
+    <div class="card">
+        <img src="https://media.istockphoto.com/id/1322976822/photo/little-girl-and-dad-saving-money-in-piggy-bank.jpg?s=612x612&w=0&k=20&c=EhHc99Iw7_MIsc-NTQUXZCG0aAjRh006YUtIDn_8BlY=">
+        <h4>Kid Seating</h4>
+        <p>Min. 50% Off</p>
+    </div>
+
+    <div class="card">
+        <img src="https://media.istockphoto.com/id/157728139/photo/chanel-n5.jpg?s=612x612&w=0&k=20&c=BBIBHrfbtnw4ODAiTG3RFAqo7K5seTV0heILCr_nOx0=">
+        <h4>Fragrances</h4>
+        <p>Min. 85% Off</p>
+    </div>
+
+    <div class="card">
+        <img src="https://media.istockphoto.com/id/1201660255/photo/genuine-leather-sneakers-shoes-for-mens-fashions.jpg?s=612x612&w=0&k=20&c=OGxmUYPA6oFdi04IppLadAhY2tRdLlQ5uWMsx8a9W6c=">
+        <h4>Shoes for men</h4>
+        <p>Min. 50% Off</p>
+    </div>
+
+</div>
+
+<!-- Bottom Navigation -->
+ <div onclick="setActive(this); window.location.href='play.html';">
+    Play Page
+</div>
+    <div onclick="setActive(this)">Top Deals</div>
+    <div onclick="setActive(this)">Account</div>
+    <div onclick="setActive(this)">Cart</div>
+</div>
+</body>
+</html>
